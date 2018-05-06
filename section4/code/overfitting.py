@@ -15,6 +15,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
+#adds the constants column with coefficnet 1, then adds the remaining X^(whatever power) variables and appends them in increasing order
+#therefore you have [8(x^3), 4(x^2), 2(x^1), 1 (constant)] and so on
 def make_poly(X, deg):
     n = len(X)
     data = [np.ones(n)]
